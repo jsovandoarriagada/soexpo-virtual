@@ -1,0 +1,152 @@
+/* RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+/* GENERAL */
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.4;
+  min-height: 100vh;
+  padding: 1.6rem;
+  display: grid;
+  place-items: center;
+  user-select: none;
+}
+
+/* MAIN */
+.main {
+  max-width: 68rem;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  gap: 3.2rem;
+}
+
+/* LOGO */
+.logo {
+  width: 18rem;
+  height: 6.3rem;
+}
+
+/* HEADINGS */
+.headings {
+  text-align: center;
+  display: grid;
+  gap: 1.6rem;
+}
+
+@media (width < 640px) {
+  .headings {
+    max-width: 44rem;
+  }
+}
+
+.headings h2 {
+  font-weight: 500;
+  font-size: 2rem;
+  color: #bcbcbc;
+}
+
+@media (width < 640px) {
+  .headings h2 {
+    font-size: 1.6rem;
+  }
+}
+
+.headings h1 {
+  font-weight: 500;
+  font-size: 2.8rem;
+  line-height: 1.1;
+}
+
+@media (width < 640px) {
+  .headings h1 {
+    font-size: 2rem;
+  }
+}
+
+.headings h1 span {
+  color: #cbf23d;
+}
+
+/* IFRAME */
+.iframe {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.4rem;
+  font-family: "Poppins" !important;
+}
+
+/* CALL TO ACTION */
+.cta {
+  display: grid;
+  place-items: center;
+  gap: 3.2rem;
+}
+
+.btn {
+  background-color: #1c8c3d;
+  font-size: 2.4rem;
+  font-weight: 500;
+  padding: 2rem;
+  border-radius: 0.4rem;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (width < 640px) {
+  .cta .btn {
+    font-size: 1.8rem;
+  }
+}
+
+.cta p {
+  text-align: center;
+  font-size: 2rem;
+  color: #bcbcbc;
+  max-width: 56rem;
+}
+
+@media (width < 640px) {
+  .cta p {
+    font-size: 1.6rem;
+    max-width: 44rem;
+  }
+}
+
+.cta p a {
+  text-decoration: none;
+  color: #cbf23d;
+}
